@@ -31,12 +31,12 @@ export default function App() {
     <div className="div-app">
       <h1 className="title">Case Converter</h1>
       <h3 className="caption">Enter your text bellow for converter</h3>
-      <textarea className="text" rows="14" cols="70" value={text} onChange={(e) => setText(e.target.value)}></textarea>
+      <textarea className="text" rows="14" cols="69" value={text} onChange={(e) => setText(e.target.value)}></textarea>
       <button onClick={converterToUpperCase}>Upper Case</button>
       <button onClick={converterToLowerCase}>Lower Case</button>
       <button onClick={converterToTitleCase}>Title Case</button>
-      <button onClick={converterToSentenceCase}>Sentence Case</button>
-      <button onClick={converterToRandomCase}>Random Case</button>
+      <button className="button-bottom" onClick={converterToSentenceCase}>Sentence Case</button>
+      <button className="button-bottom" onClick={converterToRandomCase}>Random Case</button>
     </div>
   );
 };
