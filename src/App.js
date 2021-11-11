@@ -17,27 +17,26 @@ export default function App() {
   };
 
   const converterToSentenceCase = () => {
-    
+    let splitText = text.split('');
+    let upper = splitText[0].toUpperCase();
+    let sentenceCase = upper.concat(text.substring(1).toLowerCase())
+    setText(sentenceCase);
   };
 
-  const converterToToggleCase = () => {
-
+  const converterToRandomCase = () => {
+    setText(text.split('').map(word => Math.round(Math.random()) ? word.toUpperCase() : word.toLowerCase()).join(''));
   };
 
   return (
     <div className="div-app">
-      <div className="div-main">
-        <h1 className="title">Case Converter</h1>
-        <h3 className="caption">Enter your text bellow for converter</h3>
-        <textarea className="text" rows="14" cols="77" value={text} onChange={(e) => setText(e.target.value)}></textarea>
-      </div>
-      <div className="div-buttons">
-        <button onClick={converterToUpperCase}>Upper Case</button>
-        <button onClick={converterToLowerCase}>Lower Case</button>
-        <button onClick={converterToTitleCase}>Title Case</button>
-        <button onClick={converterToSentenceCase}>Sentence Case</button>
-        <button onClick={converterToToggleCase}>Toggle Case</button>
-      </div>
+      <h1 className="title">Case Converter</h1>
+      <h3 className="caption">Enter your text bellow for converter</h3>
+      <textarea className="text" rows="14" cols="70" value={text} onChange={(e) => setText(e.target.value)}></textarea>
+      <button onClick={converterToUpperCase}>Upper Case</button>
+      <button onClick={converterToLowerCase}>Lower Case</button>
+      <button onClick={converterToTitleCase}>Title Case</button>
+      <button onClick={converterToSentenceCase}>Sentence Case</button>
+      <button onClick={converterToRandomCase}>Random Case</button>
     </div>
   );
 };
