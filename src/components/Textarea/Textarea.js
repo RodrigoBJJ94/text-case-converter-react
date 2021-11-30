@@ -8,7 +8,8 @@ export default function Textarea({ text, setText }) {
             rows="14"
             cols="69"
             value={text}
-            onChange={(e) => setText(e.target.value)}>
+            onChange={(e) => setText(e.target.value)}
+        >
         </textarea>
     );
 };
