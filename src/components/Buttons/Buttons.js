@@ -30,10 +30,8 @@ export default function Buttons({ text, setText }) {
             <button onClick={converterToUpperCase}>Upper Case</button>
             <button onClick={converterToLowerCase}>Lower Case</button>
             <button onClick={converterToTitleCase}>Title Case</button>
-            <button className="button-bottom"
-                onClick={converterToSentenceCase}>Sentence Case</button>
-            <button className="button-bottom"
-                onClick={converterToRandomCase}>Random Case</button>
+            <button className="button-b" onClick={converterToSentenceCase}>Sentence Case</button>
+            <button className="button-b" onClick={converterToRandomCase}>Random Case</button>
         </>
     );
 };
