@@ -9,11 +9,13 @@ export default function App() {
   const [text, setText] = useState();
 
   return (
-    <div className="div-app">
-      <Title />
-      <Caption />
-      <Textarea text={text} setText={setText} />
-      <Buttons text={text} setText={setText} />
+    <div className="main-container">
+      <div className="container">
+        <Title />
+        <Caption />
+        <Textarea text={text} setText={setText} />
+        <Buttons text={text} setText={setText} />
+      </div>
     </div>
   );
 };

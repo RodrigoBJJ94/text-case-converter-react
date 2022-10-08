@@ -1,2 +1,1 @@
-# text-case-converter-react
- text-case-converter-react
+# Text Case Converter developed in React

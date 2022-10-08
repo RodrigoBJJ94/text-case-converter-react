@@ -1,53 +1,40 @@
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 0.6vw;
+  margin-right: 0.6vw;
+  margin-top: 2vh;
+}
+
 button {
-  margin-top: 15px;
-  margin-left: 20px;
-  margin-right: -4.7px;
-  width: 120px;
-  height: 30px;
+  width: 6.5vw;
+  height: 3.2vh;
   border: none;
   border-radius: 2px;
-  background-color: #9b6242;
-  color: #fff;
+  background-color: #9B6242;
+  color: #FFFFFF;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 @media (max-width: 800px) {
-  button {
-    font-size: 13.5px;
-    width: 110px;
-    margin-right: -9px;
+  .buttons-container {
+    margin-left: 2.3vw;
+    margin-right: 2.3vw;
   }
 
-  .button-b {
-    width: 170px;
-    margin-left: 20px;
-    margin-top: 8px;
+  button {
+    font-size: 11px;
+    width: 18vw;
+    height: 3.6vh;
   }
 }
 
 @media (max-width: 400px) {
   button {
-    font-size: 13px;
-    width: 100px;
-    margin-left: 15px;
-    margin-right: -5px;
-  }
-
-  .button-b {
-    width: 155px;
-    margin-left: 15px;
-  }
-}
-
-@media (max-width: 320px) {
-  button {
-    font-size: 12.5px;
-    width: 88px;
-    margin-right: -8px;
-  }
-
-  .button-b {
-    width: 135.5px;
+    font-size: 10px;
+    width: 18vw;
+    height: 4.3vh;
   }
 }

@@ -1,25 +1,18 @@
 .caption {
   text-align: center;
-  font-size: 28px;
-  margin-top: 200px;
+  font-size: 22px;
+  margin-top: 18vh;
 }
 
 @media (max-width: 800px) {
   .caption {
-    font-size: 18px;
-    margin-top: 150px;
+    font-size: 17px;
+    margin-top: 18vh;
   }
 }
 
 @media (max-width: 400px) {
   .caption {
-    font-size: 17px;
-  }
-}
-
-@media (max-width: 320px) {
-  .caption {
     font-size: 15.5px;
-    margin-top: 100px;
   }
 }

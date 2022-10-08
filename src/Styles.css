@@ -3,33 +3,23 @@ body {
   padding: 0;
   outline: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  background-color: #000;
+  background-color: #000000;
 }
 
-.div-app {
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
   height: 100vh;
-  width: 700px;
-  margin: -40px auto;
-  background-color: #fff;
+  width: 36vw;
+  background-color: #FFFFFF;
 }
 
 @media (max-width: 800px) {
-  .div-app {
-    width: 390px;
-    height: 101vh;
-  }
-}
-
-@media (max-width: 400px) {
-  .div-app {
-    width: 350px;
-    height: 101.8vh;
-  }
-}
-
-@media (max-width: 320px) {
-  .div-app {
-    width: 310px;
-    height: 102.6vh;
+  .container {
+    width: 98vw;
   }
 }
