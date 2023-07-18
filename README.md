@@ -1,1 +1,3 @@
-# Text Case Converter developed in React
+# Text Case Converter
+
+Developed with React, JavaScript and CSS

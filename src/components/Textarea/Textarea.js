@@ -1,11 +1,11 @@
-import React from 'react';
-import './Styles.css';
+import React from "react";
+import "./Styles.css";
 
 export default function Textarea({ text, setText }) {
   return (
-    <div className="text-area-container">
+    <div className="textAreaContainer">
       <textarea
-        className="text"
+        className="textArea"
         value={text}
         onChange={(e) => setText(e.target.value)}
       >

@@ -1,6 +1,12 @@
-import React from 'react';
-import './Styles.css';
+import React from "react";
+import "./Styles.css";
 
 export default function Title() {
-  return <h1 className="title">Case Converter</h1>
+  return (
+    <div className="titleContainer">
+      <p className="title">
+        Case Converter
+      </p>
+    </div>
+  )
 };

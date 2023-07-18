@@ -1,37 +1,43 @@
-.text-area-container {
+.textAreaContainer {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2vh;
 }
 
-.text {
+.textArea {
+  width: 40vw;
+  height: 30vh;
+  padding: 0.7vh 0.45vw;
   font-size: 15px;
   resize: none;
-  width: 94%;
-  height: 30vh;
-  padding: 0.8vh 0.4vw;
-}
-/* 
-@media (max-width: 800px) {
-  .text {
-    width: 330px;
-    height: 180px;
-    font-size: 15px;
-  }
 }
 
-@media (max-width: 400px) {
-  .text {
-    width: 298px;
-    margin-left: 15px;
-    height: 160px;
+@media (max-width: 1400px) {
+  .textArea {
     font-size: 14.5px;
   }
 }
 
-@media (max-width: 320px) {
-  .text {
-    width: 257px;
-    font-size: 14px;
+@media (max-width: 1280px) {
+  .textArea {
+    font-size: 13.5px;
   }
-} */
+}
+
+@media (max-width: 420px) {
+  .textArea {
+    width: 80vw;
+    height: 25vh;
+    padding: 0.7vh 1.5vw;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 380px) {
+  .textArea {
+    width: 77vw;
+    height: 22vh;
+    font-size: 12.5px;
+  }
+}

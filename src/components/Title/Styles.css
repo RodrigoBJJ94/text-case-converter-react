@@ -1,18 +1,36 @@
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5vh;
+}
+
 .title {
   font-size: 50px;
   font-weight: 900;
-  text-align: center;
-  padding-top: 5vh;
+  color: #333333;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1400px) {
   .title {
-    font-size: 35px;
+    font-size: 47px;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1280px) {
   .title {
-    font-size: 30px;
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 380px) {
+  .title {
+    font-size: 38px;
   }
 }
